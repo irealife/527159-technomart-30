@@ -2355,7 +2355,7 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 943px;
   top: 120px;
-  left: 403px;
+  left: 35%;
   margin-left: -230px;
   -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
