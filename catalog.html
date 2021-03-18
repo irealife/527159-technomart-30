@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_min.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -16,19 +16,14 @@
   <header class="main-header">
     <div class="wrapper">
       <div class="container user-menu">
-        <a class="main-header-logo logo" href="#">Техномарт</a>
-        <section class="search">
-          <h2 class="visually-hidden">Поиск</h2>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-field">
-              <label class="visually-hidden" for="site-search">Поиск</label>
-              <input id="site-search" type="text" name="search" placeholder="Поиск:">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-              </svg>
-            </p>
-          </form>
-        </section>
+        <a class="main-header-logo logo" href="index.html">Техномарт</a>
+        <form class="search-form search-field" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="site-search">Поиск</label>
+          <input id="site-search" type="text" name="search" placeholder="Поиск:">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill=""/>
+          </svg>
+        </form>
         <ul class="order-list">
           <li>
             <a class="order-item order-bookmark order-bookmark-catalog" href="#">
@@ -56,7 +51,7 @@
         </ul>
       </div>
     </div>
-    <div class="wrapper wrapper-main-info">
+    <div class="wrapper wrapper-main-info wrapper-main-catalog">
       <div class="container">
         <div class="main-info main-info-catalog">
           <p class="main-text">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
@@ -163,7 +158,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-button button filter-button" type="submit">Показать</button>
+            <button class="button filter-button" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog-filter-sort">
@@ -195,6 +190,7 @@
                 <h3 class="product-header">Перфоратор BOSCH<br>BFG 6000</h3>
                 <p class="product-sale">30500 Р.</p>
                 <p class="product-sale product-price">25500 Р.</p>
+                <div class="visually-hidden product-flag product-flag-new">новинка</div>
                 <div class="product-actions">
                   <div class="container-actions">
                     <a class="product-buy" href="#">Купить</a>
@@ -209,6 +205,7 @@
                 <h3 class="product-header">Перфоратор BOSCH<br>BFG 6000</h3>
                 <p class="product-sale">30500 Р.</p>
                 <p class="product-sale product-price">25500 Р.</p>
+                <div class="visually-hidden product-flag product-flag-new">новинка</div>
                 <div class="product-actions">
                   <div class="container-actions">
                     <a class="product-buy" href="#">Купить</a>
@@ -253,6 +250,7 @@
                 <h3 class="product-header">Перфоратор BOSCH<br>BFG 6000</h3>
                 <p class="product-sale">30500 Р.</p>
                 <p class="product-sale product-price">25500 Р.</p>
+                <div class="visually-hidden product-flag product-flag-new">новинка</div>
                 <div class="product-actions">
                   <div class="container-actions">
                     <a class="product-buy" href="#">Купить</a>
@@ -297,6 +295,7 @@
                 <h3 class="product-header">Перфоратор BOSCH<br>BFG 6000</h3>
                 <p class="product-sale">30500 Р.</p>
                 <p class="product-sale product-price">25500 Р.</p>
+                <div class="visually-hidden product-flag product-flag-new">новинка</div>
                 <div class="product-actions">
                   <div class="container-actions">
                     <a class="product-buy" href="#">Купить</a>
@@ -339,40 +338,36 @@
       </section>
     </div>
     <div class="wrapper-info">
-      <div class="container">
-        <section class="info">
-          <h2 class="visually-hidden">О перфораторах</h2>
-          <p class="info-heading">Пара слов о перфораторах</p>
-          <p class="info-text">Перфоратор - &nbsp;универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </section>
+      <div class="container info">
+        <h2 class="visually-hidden">О перфораторах</h2>
+        <p class="info-heading">Пара слов о перфораторах</p>
+        <p class="info-text">Перфоратор - &nbsp;универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </div>
   </main>
 
   <footer class="main-footer">
     <div class="wrapper wrapper-light">
-      <div class="container">
-        <div class="footer-menu">
-          <a class="main-footer-logo logo" href="index.html"><img src="img/logo-footer.png" width="220" height="68" alt="Логотип интернет-магазина 'Техномарт"></a>
-          <ul class="main-footer-navigation">
-            <li><a class="navigation-item" href="#">Компания</a></li>
-            <li><a class="navigation-item" href="#">Новости</a></li>
-            <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
-            <li><a class="navigation-item" href="#">Доставка</a></li>
-            <li><a class="navigation-item" href="#">Контакты</a></li>
-          </ul>
-          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a class="footer-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
-          <ul class="footer-navigation-catalog">
-            <li><a class="navigation-item navigation-catalog-item" href="#">Материалы</a></li>
-            <li><a class="navigation-item navigation-catalog-item" href="#">Техника</a></li>
-            <li><a class="navigation-item navigation-catalog-item" href="#">Инструмент</a></li>
-            <li><a class="navigation-item navigation-catalog-item" href="#">Спецпредложения</a></li>
-          </ul>
-        </div>
+      <div class="container footer-menu">
+        <a class="main-footer-logo logo" href="index.html"><img src="img/logo-footer.png" width="220" height="68" alt="Логотип интернет-магазина 'Техномарт"></a>
+        <ul class="main-footer-navigation">
+          <li><a class="navigation-item" href="#">Компания</a></li>
+          <li><a class="navigation-item" href="#">Новости</a></li>
+          <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
+          <li><a class="navigation-item" href="#">Доставка</a></li>
+          <li><a class="navigation-item" href="#">Контакты</a></li>
+        </ul>
+        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a class="footer-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <ul class="footer-navigation-catalog">
+          <li><a class="navigation-item navigation-catalog-item" href="#">Материалы</a></li>
+          <li><a class="navigation-item navigation-catalog-item" href="#">Техника</a></li>
+          <li><a class="navigation-item navigation-catalog-item" href="#">Инструмент</a></li>
+          <li><a class="navigation-item navigation-catalog-item" href="#">Спецпредложения</a></li>
+        </ul>
       </div>
     </div>
     <div class="wrapper">
@@ -415,27 +410,27 @@
           <p class="footer-text footer-text-feedback">Обратная связь:<br>
             <a class="link-creator" href="#">mail@htmlacademy.ru</a></p>
           <p class="footer-text">Разработано —<br>
-            <a class="link-creator" href="#">htmlacademy.ru</a></p>
+            <a class="link-creator" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
   </footer>
 
-  <section class="modal modal-order">
+  <div class="modal modal-order">
     <h2 class="visually-hidden">Оформить заказ</h2>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="order-background">
         <p class="confirmation">Товар добавлен в корзину!</p>
       </div>
       <div class="order-buttons">
-        <button class="button button-button button-order" type="submit">Оформить заказ</button>
-        <button class="button button-button button-notactive" type="submit">Продолжить покупки</button>
+        <button class="button button-wrap button-order" type="submit">Оформить заказ</button>
+        <button class="button button-continue-shopping" type="button">Продолжить покупки</button>
       </div>
     </form>
     <button class="modal-close-order" type="button">Закрыть</button>
-  </section>
+  </div>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/cart_min.js"></script>
 
   </body>
 </html>
