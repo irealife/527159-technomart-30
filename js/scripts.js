@@ -128,3 +128,23 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+let navList = document.querySelectorAll(".services-navigation-item");
+let navItem = document.querySelectorAll(".service-item");
+
+for (var i=0; i < navList.length; i++) {
+  navList[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    let activeTabAttr = evt.target.getAttribute("data-tab");
+
+    for (var j=0; j < navList.length; j++) {
+      let itemAttr = navItem[j].getAttribute("data-item");
+      if (activeTabAttr == itemAttr) {
+        navItem[j].classList.add("service-item-active");
+        navList[j].classList.add("service-navigation-active");
+      } else {
+        navItem[j].classList.remove("service-item-active");
+        navList[j].classList.remove("service-navigation-active");
+      }
+    }
+  })
+}
